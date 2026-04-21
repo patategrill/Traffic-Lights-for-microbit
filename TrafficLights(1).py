@@ -4,14 +4,14 @@ import radio
 radio.on()
 radio.config(group=17)
 display.clear()
-#définit la constante losange
-losange = Image('00900:'
+#define constant diamond
+diamond = Image('00900:'
                 '09990:'
                 '90909:'
                 '09990:'
                 '00900:')
-#définit la constante losange_complet
-losange_complet = Image('00900:'
+#define constant complete_diamond
+complete_diamond = Image('00900:'
                         '09990:'
                         '99999:'
                         '09990:'
@@ -21,9 +21,9 @@ def feu_vert():
          sleep(1000)
          display.show(Image.ARROW_N)
     sleep(1000)
-    display.show(losange)
+    display.show(diamond)
     sleep(1000)
-    display.show(losange_complet)
+    display.show(complete_diamond)
 
 def feu_rouge():
     for i in range(5,-1,-1):
